@@ -1,0 +1,24 @@
+{
+  "name": "VideoChat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "index": "concurrently \"node servervideo.js & node serversr.js\" \"cd client && node index\"",
+    "dev": "concurrently \"node servervideo.js & node serversr.js\" \"cd client && yarn start\"",
+    "server": "node servervideo.js & node serversr.js",
+    "build": "cd client && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^4.0.1",
+    "ws": "^8.8.1"
+  }
+}
